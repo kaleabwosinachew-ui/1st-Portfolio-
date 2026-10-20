@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color:rgb(141, 136, 136);width:50%;
 }
 .blueBG{
@@ -12,4 +12,73 @@ body{
 }
 #playing{
     background-color:lightgreen;width:100%;
+} */
+ /* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+#header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Change link color when the mouse is over it */
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Blue background section */
+.blueBG {
+    background-color: #dbeafe;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Headings inside the section */
+h3 {
+    color: #1d4ed8;
+}
+
+/* First day heading */
+#one {
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+}
+
+/* Playing with colors paragraph */
+#playing {
+    color: #7c3aed;
+    font-weight: bold;
 }

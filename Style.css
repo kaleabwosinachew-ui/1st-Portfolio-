@@ -14,71 +14,257 @@
     background-color:lightgreen;width:100%;
 } */
  /* General page styling */
+ 
+/* =========================================
+   1. BODY: FONT, COLOR, BACKGROUND
+   ========================================= */
+
 body {
+    /* FONT: Changes the style of the text */
     font-family: Arial, sans-serif;
+
+    /* COLOR: Changes the text color */
+    color: #333333;
+
+    /* BACKGROUND: Changes the page background color */
     background-color: #f0f4f8;
-    color: #333;
+
+    /* MARGIN: Space OUTSIDE an element */
     margin: 0;
+
+    /* PADDING: Space INSIDE an element */
     padding: 20px;
+
+    /* WIDTH: Sets how wide an element is */
+    width: auto;
+
+    /* HEIGHT: Sets how tall an element is */
+    height: auto;
 }
 
-/* Header styling */
+
+/* =========================================
+   2. HEADER: BACKGROUND, BORDER, PADDING
+   ========================================= */
+
 #header {
+    /* BACKGROUND-COLOR: Blue background */
     background-color: #2563eb;
+
+    /* COLOR: White heading text */
     color: white;
+
+    /* TEXT-ALIGN: Places text in the center */
     text-align: center;
+
+    /* PADDING: Space between text and the border */
     padding: 20px;
+
+    /* BORDER: Adds a line around the element */
+    border: 2px solid #1d4ed8;
+
+    /* BORDER-RADIUS: Makes corners rounded */
     border-radius: 8px;
+
+    /* WIDTH: Uses the available width */
+    width: auto;
+
+    /* HEIGHT: Adjusts to the content and padding */
+    height: auto;
 }
 
-/* Navigation menu */
+
+/* =========================================
+   3. NAVIGATION: DISPLAY
+   ========================================= */
+
 nav {
     background-color: #1e293b;
     padding: 10px;
     border-radius: 8px;
 }
 
+/* UL is the list containing your navigation links */
 nav ul {
+    /* LIST-STYLE: Removes the bullet points */
     list-style: none;
+
+    /* DISPLAY: FLEX places list items in a row */
     display: flex;
+
+    /* JUSTIFY-CONTENT: Centers the links horizontally */
     justify-content: center;
+
+    /* GAP: Adds space between the links */
     gap: 25px;
+
     padding: 0;
     margin: 0;
 }
 
+/* Styles the Home, About, and Feedback links */
 nav a {
     color: white;
+
+    /* TEXT-DECORATION: Removes the underline */
     text-decoration: none;
+
     font-weight: bold;
+
+    /* DISPLAY: INLINE-BLOCK allows width and height
+       to be applied while keeping links in a row */
+    display: inline-block;
+
+    /* PADDING: Adds clickable space around each link */
+    padding: 8px;
 }
 
-/* Change link color when the mouse is over it */
+/* HOVER: Applies when the mouse moves over a link */
 nav a:hover {
     color: #38bdf8;
+    background-color: #334155;
 }
 
-/* Blue background section */
+
+/* =========================================
+   4. CLASS SELECTOR: .blueBG
+   ========================================= */
+
 .blueBG {
+    /* BACKGROUND: Light blue background */
     background-color: #dbeafe;
+
+    /* PADDING: Space inside the section */
     padding: 20px;
+
+    /* MARGIN-TOP: Space above the section */
     margin-top: 15px;
+
+    /* BORDER: A light blue outline */
+    border: 1px solid #93c5fd;
+
     border-radius: 8px;
+
+    /* WIDTH: Limits the section to 100% of its
+       available containing block */
+    width: auto;
+
+    /* HEIGHT: Grows automatically with its content */
+    height: auto;
 }
 
-/* Headings inside the section */
+
+/* =========================================
+   5. ELEMENT SELECTOR: h3
+   ========================================= */
+
 h3 {
+    /* COLOR: Blue heading text */
     color: #1d4ed8;
+
+    /* FONT-SIZE: Controls text size */
+    font-size: 22px;
+
+    /* FONT-WEIGHT: Controls how bold the text is */
+    font-weight: bold;
+
+    /* MARGIN: Space outside the heading */
+    margin-bottom: 10px;
 }
 
-/* First day heading */
+
+/* =========================================
+   6. ID SELECTOR: #one
+   ========================================= */
+
 #one {
+    /* BORDER-BOTTOM: Adds a line under the heading */
     border-bottom: 2px solid #2563eb;
+
+    /* PADDING-BOTTOM: Space between text and the line */
     padding-bottom: 5px;
 }
 
-/* Playing with colors paragraph */
+
+/* =========================================
+   7. ID SELECTOR: #playing
+   ========================================= */
+
 #playing {
+    /* COLOR: Purple text */
     color: #7c3aed;
+
+    /* FONT-WEIGHT: Makes the text bold */
     font-weight: bold;
+
+    /* BACKGROUND-COLOR: Adds a background to the text */
+    background-color: #ede9fe;
+
+    /* PADDING: Space inside the paragraph */
+    padding: 10px;
+
+    /* BORDER: Adds a purple outline */
+    border: 1px solid #c4b5fd;
+
+    border-radius: 5px;
 }
+
+
+/* =========================================
+   8. POSITION PROPERTY
+   ========================================= */
+
+/*
+POSITION controls how an element is placed.
+
+STATIC: Default position. It follows normal page flow.
+RELATIVE: Moves relative to its normal position.
+ABSOLUTE: Positions relative to a suitable positioned
+          ancestor.
+FIXED: Stays in place relative to the browser window.
+STICKY: Acts normally until it reaches a set position.
+
+Try these separately on #playing:
+
+position: relative;
+top: 5px;
+left: 10px;
+
+The paragraph moves 5px down and 10px right.
+Remove these lines when you finish experimenting.
+*/
+
+
+/* =========================================
+   9. CSS PRIORITY ORDER
+   ========================================= */
+
+/*
+When declarations conflict, the general priority is:
+
+1. !important declarations
+2. Inline styles
+3. ID selectors, such as #playing
+4. Class selectors, such as .blueBG
+5. Element selectors, such as p
+
+This is a simplified guide for normal author CSS.
+Specificity, source order, and other cascade rules
+also matter. !important has additional cascade rules.
+
+EXAMPLE:
+
+p {
+    color: red;
+}
+
+#playing {
+    color: purple;
+}
+
+The paragraph with id="playing" is purple because
+the ID selector has higher specificity than p.
+
+Avoid using !important while learning because it
+makes CSS harder to maintain.
+*/

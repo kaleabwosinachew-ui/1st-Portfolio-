@@ -1,114 +1,150 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <!-- Sets the character encoding -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /><!-- Makes the page responsive on phones and computers -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Makes the page work well on phones and computers -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Text displayed on the browser tab -->
+<title>1st Portfolio</title>
 
-    <!-- The title shown on the browser tab -->
-    <title>1st Portfolio</title>
+<!-- Connects this HTML file to style.css -->
+<link rel="stylesheet" href="style.css">
 
-    <!-- Connects this HTML file to your CSS file -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+  </head>  <body>
+    <!-- HEADER: Contains the main heading -->
+    <header id="header" class="blueBG">
+      <h1>Linking to Other Pages</h1>
+    </header><!-- NAVIGATION: Links to other HTML pages -->
+<nav>
+  <ul>
+    <li><a href="indx.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
 
-  <body>
-    <!-- HEADER: Contains the main heading of the page -->
-    <div>
-      <header id="header" class="blueBG">
-        <h1>Linking to Other Pages</h1>
-      </header>
+<!-- FIRST SECTION: My portfolio learning journey -->
+<main>
+  <section class="blueBG">
+    <h2>My Learning Journey</h2>
 
-      <!-- NAV: Contains links to other HTML pages -->
-      <nav>
-        <ul>
-          <!-- Each li represents one item in the navigation list -->
-          <li><a href="indx.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
-        </ul>
-      </nav>
-    </div>
+    <!-- ID: Connects this heading to #one in CSS -->
+    <h3 id="one">1st Day</h3>
 
-    <!-- CLASS: blueBG connects this section to .blueBG in style.css -->
-    <div class="blueBG">
+    <p>
+      To do this, I just have to finish all the CSS and JavaScript.
+      I mainly use AI as a supervisor or helper, like ChatGPT, Claude,
+      and others.
+    </p>
 
-      <!-- ID: one connects this heading to #one in style.css -->
-      <h3 id="one">1st Day</h3>
+    <h3>2nd Day</h3>
 
-      <p>
-        To do this, I just have to finish all the CSS and JavaScript.
-        I mainly use AI as a supervisor or helper, like ChatGPT, Claude,
-        and others.
-      </p>
+    <p>Change the background color.</p>
 
-      <h3>2nd Day</h3>
+    <!-- ID: Connects this paragraph to #playing in CSS -->
+    <p id="playing">Playing with colors.</p>
+  </section>
 
-      <p>Change the background color.</p>
+  <!-- SECOND SECTION: CSS properties I am learning -->
+  <section class="blueBG">
+    <h2>What I Am Learning in CSS</h2>
 
-      <!-- ID: playing connects this paragraph to #playing in style.css -->
-      <p id="playing">Playing with colors.</p>
-    </div>
+    <p>
+      I am learning how to style a webpage using CSS properties.
+    </p>
 
-    <!-- CSS PRACTICE SECTION -->
-    <div class="blueBG">
-      <h2>What I Am Learning in CSS</h2>
+    <!-- DISPLAY: Controls how elements appear in the layout -->
+    <h3>1. Display</h3>
+    <p>Display helps arrange elements on a page.</p>
+    <p>Examples: block, inline, inline-block, and flex.</p>
 
-      <p>
-        I am learning how to style a webpage using CSS properties.
-      </p>
+    <!-- POSITION: Controls how an element is positioned -->
+    <h3>2. Position</h3>
+    <p>
+      Position controls where an element appears.
+      Examples: static, relative, absolute, fixed, and sticky.
+    </p>
 
-      <!-- DISPLAY: Controls how elements appear in the layout -->
-      <h3>1. Display</h3>
-      <p>Display helps arrange elements in a page.</p>
-      <p>Examples: block, inline, inline-block, and flex.</p>
+    <!-- WIDTH AND HEIGHT: Control element dimensions -->
+    <h3>3. Width and Height</h3>
+    <p>Width controls how wide an element is.</p>
+    <p>Height controls how tall an element is.</p>
 
-      <!-- POSITION: Controls how an element is positioned -->
-      <h3>2. Position</h3>
-      <p>
-        Position helps control where an element appears.
-        Examples: static, relative, absolute, fixed, and sticky.
-      </p>
+    <!-- MARGIN AND PADDING: Control spacing -->
+    <h3>4. Margin and Padding</h3>
+    <p>Margin adds space outside an element.</p>
+    <p>Padding adds space inside an element.</p>
 
-      <!-- WIDTH AND HEIGHT: Control element dimensions -->
-      <h3>3. Width and Height</h3>
-      <p>Width controls how wide an element is.</p>
-      <p>Height controls how tall an element is.</p>
+    <!-- BORDER: Adds a line around an element -->
+    <h3>5. Border</h3>
+    <p>A border creates a line around an element.</p>
 
-      <!-- MARGIN AND PADDING: Control spacing -->
-      <h3>4. Margin and Padding</h3>
-      <p>Margin adds space outside an element.</p>
-      <p>Padding adds space inside an element.</p>
+    <!-- BACKGROUND: Changes the background appearance -->
+    <h3>6. Background</h3>
+    <p>Background properties can change colors or add images.</p>
 
-      <!-- BORDER: Adds an outline around an element -->
-      <h3>5. Border</h3>
-      <p>A border creates a line around an element.</p>
+    <!-- FONT: Controls the appearance of text -->
+    <h3>7. Font</h3>
+    <p>Font properties control text style, size, and boldness.</p>
 
-      <!-- BACKGROUND: Changes the background appearance -->
-      <h3>6. Background</h3>
-      <p>Background properties can change the color or add an image.</p>
+    <!-- COLOR: Changes text color -->
+    <h3>8. Color</h3>
+    <p>The color property changes the text color.</p>
 
-      <!-- FONT: Controls the appearance of text -->
-      <h3>7. Font</h3>
-      <p>Font properties control text style, size, and boldness.</p>
+    <!-- CSS PRIORITY: Explains which style wins -->
+    <h3>9. CSS Priority Order</h3>
+    <p>
+      CSS specificity helps determine which style applies
+      when multiple rules target the same element.
+    </p>
+    <p>
+      Generally, ID selectors have higher specificity than
+      class selectors, and class selectors have higher
+      specificity than element selectors.
+    </p>
+  </section>
 
-      <!-- COLOR: Changes the text color -->
-      <h3>8. Color</h3>
-      <p>Color changes the color of text inside an element.</p>
+  <!-- THIRD SECTION: Today's new CSS practice -->
+  <section class="blueBG">
+    <h2>Today's CSS Practice</h2>
 
-      <!-- CSS PRIORITY: Explains which rule wins when styles conflict -->
-      <h3>9. CSS Priority Order</h3>
-      <p>
-        CSS specificity helps decide which style applies when
-        multiple rules target the same element.
-      </p>
-      <p>
-        IDs generally have higher specificity than classes,
-        and classes generally have higher specificity than
-        element selectors.
-      </p>
-    </div>
+    <!-- HOVER: Changes the appearance when the mouse moves over an element -->
+    <h3>10. Hover Effects</h3>
+    <p>
+      Hover effects change an element's appearance when
+      the mouse pointer moves over it.
+    </p>
+    <p>Try hovering over the navigation links above.</p>
+
+    <!-- TRANSITION: Makes style changes happen smoothly -->
+    <h3>11. Transitions</h3>
+    <p>
+      Transitions make changes to colors and other CSS
+      properties happen smoothly over time.
+    </p>
+
+    <!-- FOCUS-VISIBLE: Helps keyboard users identify selected links -->
+    <h3>12. Keyboard Focus</h3>
+    <p>
+      Focus styles help users see which link is selected
+      when navigating with a keyboard.
+    </p>
+
+    <!-- OUTLINE: Draws a line outside an element's border -->
+    <h3>13. Outline</h3>
+    <p>
+      An outline highlights an element without taking up
+      space like a border does.
+    </p>
+  </section>
+</main>
+
+<!-- FOOTER: Displays a short closing message -->
+<footer>
+  <p>My first portfolio — learning and improving every day.</p>
+</footer>
+
   </body>
 </html>

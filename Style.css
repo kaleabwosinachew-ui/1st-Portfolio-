@@ -1,246 +1,287 @@
-/* body{
-    background-color:rgb(141, 136, 136);width:50%;
-}
-.blueBG{
-    background-color:blueviolet;width:50%;
-}
-#one{
-    background-color:lightblue;width:100%;
-}
-#one:hover{
-    background-color:rgb(178, 187, 12);width:100%;
-}
-#playing{
-    background-color:lightgreen;width:100%;
-} */
- /* General page styling */
- 
 /* =========================================
-   1. BODY: FONT, COLOR, BACKGROUND
+
+1. BODY: FONT, COLOR, BACKGROUND
    ========================================= */
 
 body {
-    /* FONT: Changes the style of the text */
-    font-family: Arial, sans-serif;
+/* FONT: Changes the style of the text */
+font-family: Arial, sans-serif;
 
-    /* COLOR: Changes the text color */
-    color: #333333;
+/* COLOR: Changes the text color */
+color: #333333;
 
-    /* BACKGROUND: Changes the page background color */
-    background-color: #f0f4f8;
+/* BACKGROUND: Changes the page background color */
+background-color: #f0f4f8;
 
-    /* MARGIN: Space OUTSIDE an element */
-    margin: 0;
+/* MARGIN: Space OUTSIDE an element */
+margin: 0;
 
-    /* PADDING: Space INSIDE an element */
-    padding: 20px;
+/* PADDING: Space INSIDE an element */
+padding: 20px;
 
-    /* WIDTH: Sets how wide an element is */
-    width: auto;
+/* WIDTH: Sets how wide an element is */
+width: auto;
 
-    /* HEIGHT: Sets how tall an element is */
-    height: auto;
+/* HEIGHT: Sets how tall an element is */
+height: auto;
+
 }
 
-
 /* =========================================
-   2. HEADER: BACKGROUND, BORDER, PADDING
-   ========================================= */
+2. HEADER: BACKGROUND, BORDER, PADDING
+========================================= */
 
 #header {
-    /* BACKGROUND-COLOR: Blue background */
-    background-color: #2563eb;
+/* BACKGROUND-COLOR: Blue background */
+background-color: #2563eb;
 
-    /* COLOR: White heading text */
-    color: white;
+/* COLOR: White heading text */
+color: white;
 
-    /* TEXT-ALIGN: Places text in the center */
-    text-align: center;
+/* TEXT-ALIGN: Centers the heading */
+text-align: center;
 
-    /* PADDING: Space between text and the border */
-    padding: 20px;
+/* PADDING: Space inside the element */
+padding: 20px;
 
-    /* BORDER: Adds a line around the element */
-    border: 2px solid #1d4ed8;
+/* BORDER: Adds a line around the element */
+border: 2px solid #1d4ed8;
 
-    /* BORDER-RADIUS: Makes corners rounded */
-    border-radius: 8px;
+/* BORDER-RADIUS: Rounds the corners */
+border-radius: 8px;
 
-    /* WIDTH: Uses the available width */
-    width: auto;
+/* WIDTH: Uses the available width */
+width: auto;
 
-    /* HEIGHT: Adjusts to the content and padding */
-    height: auto;
+/* HEIGHT: Adjusts to content and padding */
+height: auto;
+
 }
 
-
 /* =========================================
-   3. NAVIGATION: DISPLAY
-   ========================================= */
+3. NAVIGATION: DISPLAY AND LINKS
+========================================= */
 
 nav {
-    background-color: #1e293b;
-    padding: 10px;
-    border-radius: 8px;
+/* BACKGROUND-COLOR: Dark background */
+background-color: #1e293b;
+
+/* PADDING: Space inside navigation */
+padding: 10px;
+
+/* BORDER-RADIUS: Rounds the corners */
+border-radius: 8px;
+
 }
 
-/* UL is the list containing your navigation links */
+/* Styles the navigation list /
 nav ul {
-    /* LIST-STYLE: Removes the bullet points */
-    list-style: none;
+/ Removes bullet points */
+list-style: none;
 
-    /* DISPLAY: FLEX places list items in a row */
-    display: flex;
+/* DISPLAY: FLEX arranges links in a row */
+display: flex;
 
-    /* JUSTIFY-CONTENT: Centers the links horizontally */
-    justify-content: center;
+/* Centers the links horizontally */
+justify-content: center;
 
-    /* GAP: Adds space between the links */
-    gap: 25px;
+/* GAP: Space between navigation items */
+gap: 25px;
 
-    padding: 0;
-    margin: 0;
+/* Removes default list padding and margin */
+padding: 0;
+margin: 0;
+
 }
 
-/* Styles the Home, About, and Feedback links */
+/* Styles the Home, About, and Feedback links /
 nav a {
-    color: white;
+/ COLOR: White text */
+color: white;
 
-    /* TEXT-DECORATION: Removes the underline */
-    text-decoration: none;
+/* Removes the underline */
+text-decoration: none;
 
-    font-weight: bold;
+/* Makes the text bold */
+font-weight: bold;
 
-    /* DISPLAY: INLINE-BLOCK allows width and height
-       to be applied while keeping links in a row */
-    display: inline-block;
+/* Allows padding and dimensions on the link */
+display: inline-block;
 
-    /* PADDING: Adds clickable space around each link */
-    padding: 8px;
+/* Adds clickable space around the text */
+padding: 8px;
+
+/* Rounds the link background corners */
+border-radius: 5px;
+
+/* TRANSITION: Makes hover changes smooth */
+transition: background-color 0.3s ease,
+            color 0.3s ease;
+
 }
 
-/* HOVER: Applies when the mouse moves over a link */
+/* HOVER: Changes the link when the mouse is over it /
 nav a:hover {
-    color: #38bdf8;
-    background-color: #334155;
+/ Changes the background color */
+background-color: #38bdf8;
+
+/* Changes the text color */
+color: #1e293b;
+
 }
 
+/* FOCUS-VISIBLE: Helps keyboard users see selected links /
+nav a:focus-visible {
+/ OUTLINE: Draws a line outside the border */
+outline: 2px solid #facc15;
+
+/* Adds space between the outline and the link */
+outline-offset: 3px;
+
+}
 
 /* =========================================
-   4. CLASS SELECTOR: .blueBG
-   ========================================= */
+4. CLASS SELECTOR: .blueBG
+========================================= */
 
 .blueBG {
-    /* BACKGROUND: Light blue background */
-    background-color: #dbeafe;
+/* BACKGROUND-COLOR: Light blue background */
+background-color: #dbeafe;
 
-    /* PADDING: Space inside the section */
-    padding: 20px;
+/* PADDING: Space inside the section */
+padding: 20px;
 
-    /* MARGIN-TOP: Space above the section */
-    margin-top: 15px;
+/* MARGIN-TOP: Space above the section */
+margin-top: 15px;
 
-    /* BORDER: A light blue outline */
-    border: 1px solid #93c5fd;
+/* BORDER: Adds a light blue outline */
+border: 1px solid #93c5fd;
 
-    border-radius: 8px;
+/* Rounds the corners */
+border-radius: 8px;
 
-    /* WIDTH: Limits the section to 100% of its
-       available containing block */
-    width: auto;
+/* WIDTH: Uses the available width */
+width: auto;
 
-    /* HEIGHT: Grows automatically with its content */
-    height: auto;
+/* HEIGHT: Grows according to its content */
+height: auto;
+
 }
 
-
 /* =========================================
-   5. ELEMENT SELECTOR: h3
-   ========================================= */
+5. ELEMENT SELECTOR: h3
+========================================= */
 
 h3 {
-    /* COLOR: Blue heading text */
-    color: #1d4ed8;
+/* COLOR: Blue heading text */
+color: #1d4ed8;
 
-    /* FONT-SIZE: Controls text size */
-    font-size: 22px;
+/* FONT-SIZE: Controls text size */
+font-size: 22px;
 
-    /* FONT-WEIGHT: Controls how bold the text is */
-    font-weight: bold;
+/* FONT-WEIGHT: Controls text boldness */
+font-weight: bold;
 
-    /* MARGIN: Space outside the heading */
-    margin-bottom: 10px;
+/* MARGIN-BOTTOM: Space below the heading */
+margin-bottom: 10px;
+
 }
 
-
 /* =========================================
-   6. ID SELECTOR: #one
-   ========================================= */
+6. ID SELECTOR: #one
+========================================= */
 
 #one {
-    /* BORDER-BOTTOM: Adds a line under the heading */
-    border-bottom: 2px solid #2563eb;
+/* BORDER-BOTTOM: Adds a line below the heading */
+border-bottom: 2px solid #2563eb;
 
-    /* PADDING-BOTTOM: Space between text and the line */
-    padding-bottom: 5px;
+/* PADDING-BOTTOM: Space below the text */
+padding-bottom: 5px;
+
 }
 
-
 /* =========================================
-   7. ID SELECTOR: #playing
-   ========================================= */
+7. ID SELECTOR: #playing
+========================================= */
 
 #playing {
-    /* COLOR: Purple text */
-    color: #7c3aed;
+/* COLOR: Purple text */
+color: #7c3aed;
 
-    /* FONT-WEIGHT: Makes the text bold */
-    font-weight: bold;
+/* Makes the text bold */
+font-weight: bold;
 
-    /* BACKGROUND-COLOR: Adds a background to the text */
-    background-color: #ede9fe;
+/* BACKGROUND-COLOR: Light purple background */
+background-color: #ede9fe;
 
-    /* PADDING: Space inside the paragraph */
-    padding: 10px;
+/* PADDING: Space inside the paragraph */
+padding: 10px;
 
-    /* BORDER: Adds a purple outline */
-    border: 1px solid #c4b5fd;
+/* BORDER: Purple outline */
+border: 1px solid #c4b5fd;
 
-    border-radius: 5px;
+/* Rounds the corners */
+border-radius: 5px;
+
+/* TRANSITION: Smoothly changes colors on hover */
+transition: background-color 0.3s ease,
+            color 0.3s ease;
+
 }
 
+/* HOVER: Changes the Playing paragraph when hovered /
+#playing:hover {
+/ Darker purple background */
+background-color: #c4b5fd;
+
+/* Dark purple text */
+color: #4c1d95;
+
+}
 
 /* =========================================
-   8. POSITION PROPERTY
-   ========================================= */
+8. POSITION PROPERTY: PRACTICE NOTES
+========================================= */
 
 /*
 POSITION controls how an element is placed.
 
-STATIC: Default position. It follows normal page flow.
-RELATIVE: Moves relative to its normal position.
-ABSOLUTE: Positions relative to a suitable positioned
-          ancestor.
-FIXED: Stays in place relative to the browser window.
-STICKY: Acts normally until it reaches a set position.
+STATIC:
+The default position. The element follows normal flow.
 
-Try these separately on #playing:
+RELATIVE:
+Moves relative to its normal position.
+
+ABSOLUTE:
+Positions relative to a suitable positioned ancestor.
+
+FIXED:
+Positions relative to the browser window.
+
+STICKY:
+Behaves normally until it reaches a specified position.
+
+PRACTICE:
+Try adding these properties inside #playing:
 
 position: relative;
 top: 5px;
 left: 10px;
 
 The paragraph moves 5px down and 10px right.
-Remove these lines when you finish experimenting.
+
+Remove these properties when you finish practising.
 */
 
-
 /* =========================================
-   9. CSS PRIORITY ORDER
-   ========================================= */
+9. CSS PRIORITY ORDER
+========================================= */
 
 /*
-When declarations conflict, the general priority is:
+CSS uses the cascade and specificity to decide
+which declaration wins when styles conflict.
+
+For ordinary author styles, a simplified guide is:
 
 1. !important declarations
 2. Inline styles
@@ -248,23 +289,50 @@ When declarations conflict, the general priority is:
 4. Class selectors, such as .blueBG
 5. Element selectors, such as p
 
-This is a simplified guide for normal author CSS.
-Specificity, source order, and other cascade rules
-also matter. !important has additional cascade rules.
+IMPORTANT:
+This is a simplified guide, not a universal rule.
+Origin, cascade layers, specificity, and source order
+can change which declaration wins.
 
 EXAMPLE:
 
 p {
-    color: red;
+color: red;
 }
 
 #playing {
-    color: purple;
+color: purple;
 }
 
 The paragraph with id="playing" is purple because
-the ID selector has higher specificity than p.
+the ID selector has greater specificity than p.
 
-Avoid using !important while learning because it
-makes CSS harder to maintain.
+Avoid using !important unnecessarily.
+*/
+
+/* =========================================
+10. HOVER EFFECTS AND TRANSITIONS
+========================================= */
+
+/*
+Today's practice:
+
+:hover
+Applies styles when the mouse is over an element.
+
+transition
+Makes changes happen smoothly over time.
+
+:focus-visible
+Shows a visible focus indicator, especially when
+using a keyboard to navigate links.
+
+outline
+Draws a line outside an element's border.
+
+outline-offset
+Adds space between the outline and the element.
+
+These properties are already used above in the
+navigation links and the Playing paragraph.
 */

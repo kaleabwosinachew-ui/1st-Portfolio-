@@ -1,150 +1,128 @@
 <!doctype html>
-
 <html lang="en">
   <head>
-    <!-- Sets the character encoding -->
-    <meta charset="UTF-8" /><!-- Makes the page responsive on phones and computers -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
 
-<!-- Text displayed on the browser tab -->
-<title>1st Portfolio</title>
+    <!-- Makes the page responsive on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Connects this HTML file to style.css -->
-<link rel="stylesheet" href="style.css">
+    <!-- Browser tab title -->
+    <title>My First Portfolio</title>
 
-  </head>  <body>
-    <!-- HEADER: Contains the main heading -->
-    <header id="header" class="blueBG">
-      <h1>Linking to Other Pages</h1>
-    </header><!-- NAVIGATION: Links to other HTML pages -->
-<nav>
-  <ul>
-    <li><a href="indx.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-  </ul>
-</nav>
+    <!-- Connect HTML to CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<!-- FIRST SECTION: My portfolio learning journey -->
-<main>
-  <section class="blueBG">
-    <h2>My Learning Journey</h2>
+  <body>
+    <!-- HEADER: Main heading of the website -->
+    <header id="header">
+      <h1>My Learning Portfolio</h1>
+      <p>Learning, Practicing, and Improving Every Day</p>
+    </header>
 
-    <!-- ID: Connects this heading to #one in CSS -->
-    <h3 id="one">1st Day</h3>
+    <!-- NAV: Links to other pages -->
+    <nav>
+      <ul>
+        <li><a href="indx.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
 
-    <p>
-      To do this, I just have to finish all the CSS and JavaScript.
-      I mainly use AI as a supervisor or helper, like ChatGPT, Claude,
-      and others.
-    </p>
+    <!-- MAIN: Contains the main content of the page -->
+    <main>
 
-    <h3>2nd Day</h3>
+      <!-- FIRST SECTION: My learning journey -->
+      <section class="blueBG">
+        <h2>My Learning Journey</h2>
 
-    <p>Change the background color.</p>
+        <h3 id="one">1st Day</h3>
+        <p>
+          I started learning web development. My goal is to
+          understand HTML, CSS, and JavaScript. I use AI tools
+          such as ChatGPT and Claude as learning assistants.
+        </p>
 
-    <!-- ID: Connects this paragraph to #playing in CSS -->
-    <p id="playing">Playing with colors.</p>
-  </section>
+        <h3>2nd Day</h3>
+        <p>
+          I practiced changing background colors, text colors,
+          and other CSS properties to improve my webpage.
+        </p>
 
-  <!-- SECOND SECTION: CSS properties I am learning -->
-  <section class="blueBG">
-    <h2>What I Am Learning in CSS</h2>
+        <p id="playing">Playing with colors!</p>
 
-    <p>
-      I am learning how to style a webpage using CSS properties.
-    </p>
+        <!-- NEW: Third day update -->
+        <h3>3rd Day</h3>
+        <p>
+          Today, I continued practicing HTML and CSS. I learned
+          about semantic HTML elements, page layout, hover
+          effects, transitions, and responsive design.
+        </p>
+      </section>
 
-    <!-- DISPLAY: Controls how elements appear in the layout -->
-    <h3>1. Display</h3>
-    <p>Display helps arrange elements on a page.</p>
-    <p>Examples: block, inline, inline-block, and flex.</p>
+      <!-- SECOND SECTION: CSS topics -->
+      <section class="blueBG">
+        <h2>What I Am Learning in CSS</h2>
 
-    <!-- POSITION: Controls how an element is positioned -->
-    <h3>2. Position</h3>
-    <p>
-      Position controls where an element appears.
-      Examples: static, relative, absolute, fixed, and sticky.
-    </p>
+        <p>These are some of the CSS properties I am practicing:</p>
 
-    <!-- WIDTH AND HEIGHT: Control element dimensions -->
-    <h3>3. Width and Height</h3>
-    <p>Width controls how wide an element is.</p>
-    <p>Height controls how tall an element is.</p>
+        <ul class="learning-list">
+          <li>Display and Position</li>
+          <li>Width and Height</li>
+          <li>Margin and Padding</li>
+          <li>Border and Border Radius</li>
+          <li>Background and Color</li>
+          <li>Font Properties</li>
+          <li>CSS Specificity and Priority</li>
+          <li>Hover Effects and Transitions</li>
+        </ul>
+      </section>
 
-    <!-- MARGIN AND PADDING: Control spacing -->
-    <h3>4. Margin and Padding</h3>
-    <p>Margin adds space outside an element.</p>
-    <p>Padding adds space inside an element.</p>
+      <!-- THIRD SECTION: HTML topics -->
+      <section class="blueBG">
+        <h2>What I Am Learning in HTML</h2>
 
-    <!-- BORDER: Adds a line around an element -->
-    <h3>5. Border</h3>
-    <p>A border creates a line around an element.</p>
+        <p>
+          HTML gives structure and meaning to the content
+          displayed on a webpage.
+        </p>
 
-    <!-- BACKGROUND: Changes the background appearance -->
-    <h3>6. Background</h3>
-    <p>Background properties can change colors or add images.</p>
+        <ul class="learning-list">
+          <li>Semantic elements such as header, nav, main, and footer</li>
+          <li>Headings and paragraphs</li>
+          <li>Links and navigation menus</li>
+          <li>Lists using ul and li</li>
+          <li>Connecting HTML with CSS</li>
+        </ul>
+      </section>
 
-    <!-- FONT: Controls the appearance of text -->
-    <h3>7. Font</h3>
-    <p>Font properties control text style, size, and boldness.</p>
+      <!-- FOURTH SECTION: My goals -->
+      <section class="blueBG">
+        <h2>My Goals</h2>
 
-    <!-- COLOR: Changes text color -->
-    <h3>8. Color</h3>
-    <p>The color property changes the text color.</p>
+        <p>My goals as a beginner web developer are to:</p>
 
-    <!-- CSS PRIORITY: Explains which style wins -->
-    <h3>9. CSS Priority Order</h3>
-    <p>
-      CSS specificity helps determine which style applies
-      when multiple rules target the same element.
-    </p>
-    <p>
-      Generally, ID selectors have higher specificity than
-      class selectors, and class selectors have higher
-      specificity than element selectors.
-    </p>
-  </section>
+        <ul class="learning-list">
+          <li>Practice coding every day.</li>
+          <li>Build more HTML and CSS projects.</li>
+          <li>Learn JavaScript step by step.</li>
+          <li>Improve my problem-solving skills.</li>
+          <li>Keep my projects updated on GitHub.</li>
+        </ul>
 
-  <!-- THIRD SECTION: Today's new CSS practice -->
-  <section class="blueBG">
-    <h2>Today's CSS Practice</h2>
+        <p class="goal-message">
+          Every expert was once a beginner. Keep learning!
+        </p>
+      </section>
 
-    <!-- HOVER: Changes the appearance when the mouse moves over an element -->
-    <h3>10. Hover Effects</h3>
-    <p>
-      Hover effects change an element's appearance when
-      the mouse pointer moves over it.
-    </p>
-    <p>Try hovering over the navigation links above.</p>
+    </main>
 
-    <!-- TRANSITION: Makes style changes happen smoothly -->
-    <h3>11. Transitions</h3>
-    <p>
-      Transitions make changes to colors and other CSS
-      properties happen smoothly over time.
-    </p>
-
-    <!-- FOCUS-VISIBLE: Helps keyboard users identify selected links -->
-    <h3>12. Keyboard Focus</h3>
-    <p>
-      Focus styles help users see which link is selected
-      when navigating with a keyboard.
-    </p>
-
-    <!-- OUTLINE: Draws a line outside an element's border -->
-    <h3>13. Outline</h3>
-    <p>
-      An outline highlights an element without taking up
-      space like a border does.
-    </p>
-  </section>
-</main>
-
-<!-- FOOTER: Displays a short closing message -->
-<footer>
-  <p>My first portfolio — learning and improving every day.</p>
-</footer>
+    <!-- FOOTER: Closing message -->
+    <footer>
+      <p>My First Portfolio | Learning Every Day</p>
+      <a href="#header">Back to Top ↑</a>
+    </footer>
 
   </body>
 </html>

@@ -1,128 +1,152 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Character encoding -->
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Makes the page responsive on phones -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learning Portfolio</title>
 
-    <!-- Browser tab title -->
-    <title>My First Portfolio</title>
+    <!-- Connect this HTML file to the CSS file -->
+    <link rel="stylesheet" href="Style.css">
+</head>
 
-    <!-- Connect HTML to CSS -->
-    <link rel="stylesheet" href="style.css">
-  </head>
+<body>
 
-  <body>
-    <!-- HEADER: Main heading of the website -->
+    <!-- HEADER: The introduction at the top of the page -->
     <header id="header">
-      <h1>My Learning Portfolio</h1>
-      <p>Learning, Practicing, and Improving Every Day</p>
+        <h1>My Learning Portfolio</h1>
+        <p>Learning, Practicing, and Improving Every Day 🚀</p>
     </header>
 
-    <!-- NAV: Links to other pages -->
-    <nav>
-      <ul>
-        <li><a href="indx.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
-      </ul>
+    <!-- NAVIGATION: Links to other pages on the website -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
     </nav>
 
-    <!-- MAIN: Contains the main content of the page -->
+    <!-- MAIN: Contains the main content of the webpage -->
     <main>
 
-      <!-- FIRST SECTION: My learning journey -->
-      <section class="blueBG">
-        <h2>My Learning Journey</h2>
+        <!-- DAY 1, 2, 3, AND 4 -->
+        <section class="card">
+            <h2>My Learning Journey 📚</h2>
 
-        <h3 id="one">1st Day</h3>
-        <p>
-          I started learning web development. My goal is to
-          understand HTML, CSS, and JavaScript. I use AI tools
-          such as ChatGPT and Claude as learning assistants.
-        </p>
+            <article>
+                <h3>Day 1: Starting HTML</h3>
+                <p>
+                    I started learning web development. I learned how HTML
+                    creates the structure of a webpage.
+                </p>
+            </article>
 
-        <h3>2nd Day</h3>
-        <p>
-          I practiced changing background colors, text colors,
-          and other CSS properties to improve my webpage.
-        </p>
+            <article>
+                <h3>Day 2: Practicing CSS</h3>
+                <p>
+                    I practiced changing background colors, text colors,
+                    borders, and other CSS properties.
+                </p>
+            </article>
 
-        <p id="playing">Playing with colors!</p>
+            <article>
+                <h3>Day 3: Semantic HTML</h3>
+                <p>
+                    I learned about semantic elements such as header,
+                    nav, main, section, article, and footer.
+                </p>
+            </article>
 
-        <!-- NEW: Third day update -->
-        <h3>3rd Day</h3>
-        <p>
-          Today, I continued practicing HTML and CSS. I learned
-          about semantic HTML elements, page layout, hover
-          effects, transitions, and responsive design.
-        </p>
-      </section>
+            <article>
+                <h3>Day 4: Improving My Website 💻</h3>
+                <p>
+                    Today, I practiced creating a responsive navigation menu,
+                    styling buttons, using hover effects, and organizing
+                    webpage content with HTML and CSS.
+                </p>
+                <p>
+                    I also continued learning how to use GitHub to save
+                    and update my projects.
+                </p>
+            </article>
+        </section>
 
-      <!-- SECOND SECTION: CSS topics -->
-      <section class="blueBG">
-        <h2>What I Am Learning in CSS</h2>
+        <!-- HTML SKILLS -->
+        <section class="card">
+            <h2>What I Have Learned in HTML</h2>
 
-        <p>These are some of the CSS properties I am practicing:</p>
+            <ul class="skill-list">
+                <li>HTML document structure</li>
+                <li>Headings and paragraphs</li>
+                <li>Links and navigation menus</li>
+                <li>Ordered and unordered lists</li>
+                <li>Semantic HTML elements</li>
+                <li>Images and videos</li>
+                <li>Special text using sup, sub, and em</li>
+                <li>Dropdown options using select and option</li>
+            </ul>
+        </section>
 
-        <ul class="learning-list">
-          <li>Display and Position</li>
-          <li>Width and Height</li>
-          <li>Margin and Padding</li>
-          <li>Border and Border Radius</li>
-          <li>Background and Color</li>
-          <li>Font Properties</li>
-          <li>CSS Specificity and Priority</li>
-          <li>Hover Effects and Transitions</li>
-        </ul>
-      </section>
+        <!-- CSS SKILLS -->
+        <section class="card">
+            <h2>What I Have Learned in CSS</h2>
 
-      <!-- THIRD SECTION: HTML topics -->
-      <section class="blueBG">
-        <h2>What I Am Learning in HTML</h2>
+            <ul class="skill-list">
+                <li>Colors and backgrounds</li>
+                <li>Fonts and text styling</li>
+                <li>Width and height</li>
+                <li>Margin and padding</li>
+                <li>Borders and rounded corners</li>
+                <li>Display and position</li>
+                <li>Hover effects and transitions</li>
+                <li>Responsive design using media queries</li>
+                <li>CSS specificity and priority</li>
+            </ul>
+        </section>
 
-        <p>
-          HTML gives structure and meaning to the content
-          displayed on a webpage.
-        </p>
+        <!-- A SMALL HTML FORM -->
+        <section class="card">
+            <h2>Where Are You Learning From? 🌍</h2>
+            <p>Choose a place to practice the HTML select element.</p>
 
-        <ul class="learning-list">
-          <li>Semantic elements such as header, nav, main, and footer</li>
-          <li>Headings and paragraphs</li>
-          <li>Links and navigation menus</li>
-          <li>Lists using ul and li</li>
-          <li>Connecting HTML with CSS</li>
-        </ul>
-      </section>
+            <label for="location">Choose a location:</label>
 
-      <!-- FOURTH SECTION: My goals -->
-      <section class="blueBG">
-        <h2>My Goals</h2>
+            <select id="location" name="location">
+                <option value="">Select a location</option>
+                <option value="arba-minch">Arba Minch</option>
+                <option value="addis-ababa">Addis Ababa</option>
+                <option value="hawassa">Hawassa</option>
+                <option value="other">Other</option>
+            </select>
+        </section>
 
-        <p>My goals as a beginner web developer are to:</p>
+        <!-- FUTURE GOALS -->
+        <section class="card">
+            <h2>My Goals 🎯</h2>
 
-        <ul class="learning-list">
-          <li>Practice coding every day.</li>
-          <li>Build more HTML and CSS projects.</li>
-          <li>Learn JavaScript step by step.</li>
-          <li>Improve my problem-solving skills.</li>
-          <li>Keep my projects updated on GitHub.</li>
-        </ul>
+            <ul class="skill-list">
+                <li>Practice coding regularly.</li>
+                <li>Improve my HTML and CSS skills.</li>
+                <li>Learn JavaScript step by step.</li>
+                <li>Build responsive websites.</li>
+                <li>Keep updating my GitHub portfolio.</li>
+            </ul>
 
-        <p class="goal-message">
-          Every expert was once a beginner. Keep learning!
-        </p>
-      </section>
+            <p class="goal-message">
+                Every expert was once a beginner. Keep learning!
+            </p>
+        </section>
 
     </main>
 
-    <!-- FOOTER: Closing message -->
+    <!-- FOOTER: Information at the bottom of the webpage -->
     <footer>
-      <p>My First Portfolio | Learning Every Day</p>
-      <a href="#header">Back to Top ↑</a>
+        <p>My Learning Portfolio | Day 4</p>
+        <a href="#header">Back to Top ↑</a>
     </footer>
 
-  </body>
+</body>
 </html>
+```

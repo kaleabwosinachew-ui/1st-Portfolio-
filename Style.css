@@ -1,468 +1,281 @@
-/* =========================================
-   1. GENERAL PAGE STYLING
-   ========================================= */
+```css
+/* ==================================
+   DAY 4: PORTFOLIO CSS
+   ================================== */
 
-/* Applies to all elements */
+/* Apply consistent sizing to every element */
 * {
-    /* Includes padding and borders in the element's width */
     box-sizing: border-box;
 }
 
+/* ==================================
+   BODY: The whole webpage
+   ================================== */
 body {
-    /* FONT: Changes the text typeface */
     font-family: Arial, sans-serif;
-
-    /* COLOR: Default text color */
-    color: #333333;
-
-    /* BACKGROUND: Page background color */
+    color: #263238;
     background-color: #f0f4f8;
 
-    /* MARGIN: Removes default outside space */
     margin: 0;
-
-    /* PADDING: Adds space around the page content */
     padding: 20px;
 
-    /* WIDTH: Uses the available width */
-    width: 100%;
-
-    /* LINE-HEIGHT: Adds comfortable space between text lines */
     line-height: 1.6;
 }
 
-
-/* =========================================
-   2. HEADER
-   ========================================= */
-
+/* ==================================
+   HEADER: Top section
+   ================================== */
 #header {
-    /* BACKGROUND-COLOR: Blue background */
-    background-color: #2563eb;
-
-    /* COLOR: White text */
+    background-color: #1d4ed8;
     color: white;
 
-    /* TEXT-ALIGN: Centers the text */
     text-align: center;
-
-    /* PADDING: Space inside the header */
     padding: 25px 15px;
+    margin-bottom: 20px;
 
-    /* BORDER: Blue outline */
-    border: 2px solid #1d4ed8;
-
-    /* BORDER-RADIUS: Rounded corners */
-    border-radius: 10px;
-
-    /* MARGIN-BOTTOM: Space below the header */
-    margin-bottom: 15px;
+    border: 2px solid #1e40af;
+    border-radius: 12px;
 }
 
 #header h1 {
-    /* FONT-SIZE: Main heading size */
-    font-size: 32px;
-
-    /* MARGIN: Removes default heading spacing */
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 #header p {
-    /* Adds space above the subtitle */
-    margin: 8px 0 0;
+    margin-bottom: 0;
 }
 
-
-/* =========================================
-   3. NAVIGATION
-   ========================================= */
-
+/* ==================================
+   NAVIGATION MENU
+   ================================== */
 nav {
-    /* BACKGROUND-COLOR: Dark navigation background */
     background-color: #1e293b;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
 
-    /* PADDING: Space inside navigation */
+/* Remove the default list bullets */
+nav ul {
+    list-style: none;
+    margin: 0;
     padding: 10px;
 
-    /* BORDER-RADIUS: Rounded corners */
-    border-radius: 8px;
-
-    /* MARGIN-BOTTOM: Space below navigation */
-    margin-bottom: 20px;
-}
-
-nav ul {
-    /* Removes bullet points */
-    list-style: none;
-
-    /* DISPLAY: FLEX places links in a row */
     display: flex;
-
-    /* Centers the navigation links */
     justify-content: center;
-
-    /* GAP: Space between links */
-    gap: 20px;
-
-    /* Removes default list spacing */
-    margin: 0;
-    padding: 0;
-
-    /* Allows links to wrap on smaller screens */
     flex-wrap: wrap;
+    gap: 10px;
 }
 
+/* Style the navigation links */
 nav a {
-    /* COLOR: White link text */
+    display: block;
     color: white;
-
-    /* Removes link underline */
     text-decoration: none;
 
-    /* FONT-WEIGHT: Bold text */
-    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
 
-    /* DISPLAY: Allows padding around the links */
-    display: inline-block;
-
-    /* PADDING: Clickable space inside the link */
-    padding: 8px 12px;
-
-    /* BORDER-RADIUS: Rounded link corners */
-    border-radius: 5px;
-
-    /* TRANSITION: Smooth color changes */
-    transition: background-color 0.3s ease,
-                color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-
-/* HOVER: Changes the link when the mouse is over it */
+/* Change the link color when the mouse is over it */
 nav a:hover {
-    background-color: #38bdf8;
-    color: #1e293b;
+    background-color: #2563eb;
 }
 
-
-/* FOCUS-VISIBLE: Helps keyboard users identify a link */
+/* Make keyboard navigation easier to see */
 nav a:focus-visible {
-    outline: 2px solid #facc15;
+    outline: 3px solid #facc15;
     outline-offset: 3px;
 }
 
-
-/* =========================================
-   4. MAIN CONTENT
-   ========================================= */
-
+/* ==================================
+   MAIN CONTENT
+   ================================== */
 main {
-    /* WIDTH: Prevents content from becoming too wide */
     width: 100%;
+    max-width: 900px;
 
-    /* MAX-WIDTH: Maximum content width */
-    max-width: 1000px;
-
-    /* MARGIN: Centers main content horizontally */
     margin: 0 auto;
 }
 
+/* Reusable card style for each section */
+.card {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 22px;
 
-/* =========================================
-   5. SECTIONS: .blueBG
-   ========================================= */
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
 
-.blueBG {
-    /* BACKGROUND: Light blue section background */
-    background-color: #dbeafe;
-
-    /* PADDING: Space inside each section */
-    padding: 20px;
-
-    /* MARGIN-BOTTOM: Space between sections */
-    margin-bottom: 20px;
-
-    /* BORDER: Light blue outline */
-    border: 1px solid #93c5fd;
-
-    /* BORDER-RADIUS: Rounded corners */
-    border-radius: 10px;
-
-    /* WIDTH: Uses available space */
-    width: 100%;
-
-    /* HEIGHT: Grows according to the content */
-    height: auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
 }
 
-
-/* =========================================
-   6. HEADINGS AND PARAGRAPHS
-   ========================================= */
-
-h2 {
-    /* COLOR: Dark blue section headings */
-    color: #1e40af;
-
-    /* FONT-SIZE: Heading size */
-    font-size: 25px;
-
-    /* MARGIN-TOP: Removes extra top spacing */
-    margin-top: 0;
-}
-
-h3 {
-    /* COLOR: Blue subheadings */
+/* Section headings */
+.card h2 {
     color: #1d4ed8;
+    margin-top: 0;
 
-    /* FONT-SIZE: Subheading size */
-    font-size: 21px;
-
-    /* MARGIN-BOTTOM: Space below headings */
-    margin-bottom: 10px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 8px;
 }
 
-p {
-    /* MARGIN: Space around paragraphs */
-    margin-top: 10px;
-    margin-bottom: 10px;
+/* Day headings */
+article h3 {
+    color: #334155;
+    margin-bottom: 5px;
 }
 
-
-/* =========================================
-   7. FIRST DAY HEADING
-   ========================================= */
-
-#one {
-    /* BORDER-BOTTOM: Line below the heading */
-    border-bottom: 2px solid #2563eb;
-
-    /* PADDING-BOTTOM: Space above the line */
-    padding-bottom: 5px;
+/* Space between learning entries */
+article {
+    margin-bottom: 20px;
 }
 
-
-/* =========================================
-   8. PLAYING WITH COLORS
-   ========================================= */
-
-#playing {
-    /* COLOR: Purple text */
-    color: #7c3aed;
-
-    /* BACKGROUND-COLOR: Light purple */
-    background-color: #ede9fe;
-
-    /* FONT-WEIGHT: Bold text */
-    font-weight: bold;
-
-    /* PADDING: Space inside the paragraph */
-    padding: 12px;
-
-    /* BORDER: Purple outline */
-    border: 1px solid #c4b5fd;
-
-    /* BORDER-RADIUS: Rounded corners */
-    border-radius: 6px;
-
-    /* TRANSITION: Smooth background and text changes */
-    transition: background-color 0.3s ease,
-                color 0.3s ease;
+article:last-child {
+    margin-bottom: 0;
 }
 
-
-/* HOVER: Changes colors when the paragraph is hovered */
-#playing:hover {
-    background-color: #c4b5fd;
-    color: #4c1d95;
-}
-
-
-/* =========================================
-   9. LEARNING LISTS
-   ========================================= */
-
-.learning-list {
-    /* PADDING-LEFT: Space for list markers */
+/* ==================================
+   SKILL LISTS
+   ================================== */
+.skill-list {
     padding-left: 25px;
-
-    /* MARGIN: Space around the list */
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
-.learning-list li {
-    /* MARGIN-BOTTOM: Space between list items */
+.skill-list li {
     margin-bottom: 8px;
 }
 
-
-/* =========================================
-   10. GOAL MESSAGE
-   ========================================= */
-
-.goal-message {
-    /* BACKGROUND-COLOR: Light purple background */
-    background-color: #ede9fe;
-
-    /* COLOR: Dark purple text */
-    color: #4c1d95;
-
-    /* PADDING: Space inside the message */
-    padding: 12px;
-
-    /* BORDER-LEFT: Decorative line on the left */
-    border-left: 4px solid #7c3aed;
-
-    /* FONT-WEIGHT: Bold message */
-    font-weight: bold;
-
-    /* BORDER-RADIUS: Slightly rounded corners */
-    border-radius: 5px;
+/* Change a list item when the mouse is over it */
+.skill-list li:hover {
+    color: #1d4ed8;
 }
 
+/* ==================================
+   SELECT DROPDOWN
+   ================================== */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
 
-/* =========================================
-   11. FOOTER
-   ========================================= */
+select {
+    width: 100%;
+    max-width: 350px;
 
+    padding: 12px;
+    font-size: 16px;
+
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+    background-color: white;
+    color: #263238;
+}
+
+select:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+/* ==================================
+   GOALS MESSAGE
+   ================================== */
+.goal-message {
+    background-color: #dbeafe;
+    color: #1e40af;
+
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+/* ==================================
+   FOOTER
+   ================================== */
 footer {
-    /* BACKGROUND-COLOR: Dark footer */
     background-color: #1e293b;
-
-    /* COLOR: White text */
     color: white;
 
-    /* TEXT-ALIGN: Centers footer content */
     text-align: center;
-
-    /* PADDING: Space inside footer */
     padding: 20px;
+    margin-top: 25px;
 
-    /* BORDER-RADIUS: Rounded corners */
-    border-radius: 8px;
-
-    /* MARGIN-TOP: Space above footer */
-    margin-top: 20px;
+    border-radius: 10px;
 }
 
 footer a {
-    /* COLOR: Light blue link */
-    color: #38bdf8;
-
-    /* TEXT-DECORATION: Removes underline */
-    text-decoration: none;
-
-    /* FONT-WEIGHT: Bold link */
-    font-weight: bold;
-
-    /* TRANSITION: Smooth color change */
-    transition: color 0.3s ease;
+    color: #93c5fd;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 footer a:hover {
-    color: #facc15;
+    color: white;
 }
 
-footer a:focus-visible {
-    outline: 2px solid #facc15;
-    outline-offset: 3px;
-}
-
-
-/* =========================================
-   12. POSITION PROPERTY: PRACTICE NOTES
-   ========================================= */
+/* ==================================
+   POSITION PROPERTY EXAMPLE
+   ================================== */
 
 /*
-POSITION controls how an element is placed.
+position: static;   Default position
+position: relative; Moves relative to its normal position
+position: absolute; Positioned relative to a positioned ancestor
+position: fixed;    Stays in the same place on the screen
+position: sticky;   Can stick while scrolling
 
-static   = Default position in normal page flow.
-relative = Positioned relative to its normal position.
-absolute = Positioned relative to a suitable ancestor.
-fixed    = Positioned relative to the browser window.
-sticky   = Sticks after reaching a specified position.
-
-Example to try on #playing:
-
-    position: relative;
-    top: 5px;
-    left: 10px;
-
-Remove these properties when you finish experimenting.
+We will practice these properties in future updates.
 */
 
-
-/* =========================================
-   13. CSS PRIORITY AND SPECIFICITY
-   ========================================= */
+/* ==================================
+   CSS PRIORITY / SPECIFICITY
+   ================================== */
 
 /*
-When CSS rules conflict, the cascade decides which wins.
+When rules conflict, CSS generally considers:
 
-For selectors in the same cascade context, specificity
-is generally compared in this order:
+1. !important declarations
+2. Selector specificity
+3. Source order when specificity is equal
 
-1. ID selectors       #playing
-2. Class selectors    .blueBG
-3. Element selectors  p
+For example:
+#header is more specific than .card
+.card is more specific than a plain element selector
 
-Inline styles and !important can affect the outcome.
-Source order also matters when specificity is equal.
-
-Example:
-
-p {
-    color: red;
-}
-
-#playing {
-    color: purple;
-}
-
-The #playing text is purple because the ID selector
-has greater specificity than the paragraph selector.
-
-Avoid using !important unnecessarily.
+Avoid using !important unless necessary.
 */
 
-
-/* =========================================
-   14. RESPONSIVE DESIGN
-   ========================================= */
-
-/*
-MEDIA QUERIES apply styles when certain conditions,
-such as screen width, are met.
-*/
-
+/* ==================================
+   RESPONSIVE DESIGN: Small screens
+   ================================== */
 @media (max-width: 600px) {
-
-    /* Reduces page padding on small screens */
     body {
         padding: 10px;
     }
 
-    /* Makes the main heading smaller on phones */
+    #header {
+        padding: 20px 10px;
+    }
+
     #header h1 {
         font-size: 25px;
     }
 
-    /* Reduces section padding on phones */
-    .blueBG {
-        padding: 15px;
-    }
-
-    /* Reduces heading sizes on smaller screens */
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 19px;
-    }
-
-    /* Adds space between navigation links on phones */
     nav ul {
-        gap: 8px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .card {
+        padding: 16px;
     }
 }
+```

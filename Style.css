@@ -1,16 +1,15 @@
-```css
-/* ==================================
-   DAY 4: PORTFOLIO CSS
-   ================================== */
+/* =====================================
+   DAY 5: PORTFOLIO STYLES
+   ===================================== */
 
-/* Apply consistent sizing to every element */
+/* Apply consistent sizing to all elements */
 * {
     box-sizing: border-box;
 }
 
-/* ==================================
-   BODY: The whole webpage
-   ================================== */
+/* =====================================
+   BODY
+   ===================================== */
 body {
     font-family: Arial, sans-serif;
     color: #263238;
@@ -18,13 +17,12 @@ body {
 
     margin: 0;
     padding: 20px;
-
     line-height: 1.6;
 }
 
-/* ==================================
-   HEADER: Top section
-   ================================== */
+/* =====================================
+   HEADER
+   ===================================== */
 #header {
     background-color: #1d4ed8;
     color: white;
@@ -39,23 +37,21 @@ body {
 
 #header h1 {
     margin-top: 0;
-    margin-bottom: 10px;
 }
 
 #header p {
     margin-bottom: 0;
 }
 
-/* ==================================
-   NAVIGATION MENU
-   ================================== */
+/* =====================================
+   NAVIGATION
+   ===================================== */
 nav {
     background-color: #1e293b;
     border-radius: 10px;
     margin-bottom: 25px;
 }
 
-/* Remove the default list bullets */
 nav ul {
     list-style: none;
     margin: 0;
@@ -67,7 +63,6 @@ nav ul {
     gap: 10px;
 }
 
-/* Style the navigation links */
 nav a {
     display: block;
     color: white;
@@ -79,28 +74,25 @@ nav a {
     transition: background-color 0.3s ease;
 }
 
-/* Change the link color when the mouse is over it */
 nav a:hover {
     background-color: #2563eb;
 }
 
-/* Make keyboard navigation easier to see */
 nav a:focus-visible {
     outline: 3px solid #facc15;
     outline-offset: 3px;
 }
 
-/* ==================================
+/* =====================================
    MAIN CONTENT
-   ================================== */
+   ===================================== */
 main {
     width: 100%;
     max-width: 900px;
-
     margin: 0 auto;
 }
 
-/* Reusable card style for each section */
+/* Reusable card design */
 .card {
     background-color: white;
     padding: 22px;
@@ -112,33 +104,77 @@ main {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
 }
 
-/* Section headings */
 .card h2 {
     color: #1d4ed8;
     margin-top: 0;
+    padding-bottom: 8px;
 
     border-bottom: 2px solid #dbeafe;
-    padding-bottom: 8px;
 }
 
-/* Day headings */
-article h3 {
-    color: #334155;
+/* =====================================
+   DAILY JOURNEY
+   ===================================== */
+.day {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+
+    border-left: 4px solid #2563eb;
+    background-color: #f8fafc;
+}
+
+.day h3 {
+    margin-top: 0;
     margin-bottom: 5px;
+    color: #334155;
 }
 
-/* Space between learning entries */
-article {
-    margin-bottom: 20px;
-}
-
-article:last-child {
+.day p {
     margin-bottom: 0;
 }
 
-/* ==================================
-   SKILL LISTS
-   ================================== */
+/* =====================================
+   PROJECTS
+   ===================================== */
+.project {
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border: 1px solid #dbe3ec;
+    border-radius: 8px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* Small visual effect when hovering over a project */
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #334155;
+}
+
+/* Small labels showing technologies */
+.tag {
+    display: inline-block;
+
+    background-color: #dbeafe;
+    color: #1e40af;
+
+    padding: 4px 10px;
+    margin: 4px 4px 0 0;
+
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* =====================================
+   SKILLS LIST
+   ===================================== */
 .skill-list {
     padding-left: 25px;
 }
@@ -147,41 +183,80 @@ article:last-child {
     margin-bottom: 8px;
 }
 
-/* Change a list item when the mouse is over it */
 .skill-list li:hover {
     color: #1d4ed8;
 }
 
-/* ==================================
-   SELECT DROPDOWN
-   ================================== */
-label {
+/* =====================================
+   BUTTONS AND LINKS
+   ===================================== */
+.button,
+button {
+    display: inline-block;
+
+    background-color: #2563eb;
+    color: white;
+
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+button:hover {
+    background-color: #1e40af;
+}
+
+.button:focus-visible,
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* =====================================
+   CONTACT FORM
+   ===================================== */
+form label {
     display: block;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin: 15px 0 6px;
 }
 
-select {
+input,
+textarea {
+    display: block;
     width: 100%;
-    max-width: 350px;
 
     padding: 12px;
-    font-size: 16px;
-
+    margin-bottom: 12px;
     border: 1px solid #94a3b8;
     border-radius: 6px;
-    background-color: white;
+
+    font-family: inherit;
+    font-size: 16px;
     color: #263238;
+    background-color: white;
 }
 
-select:focus-visible {
-    outline: 3px solid #93c5fd;
-    outline-offset: 2px;
+textarea {
+    resize: vertical;
 }
 
-/* ==================================
+input:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+/* =====================================
    GOALS MESSAGE
-   ================================== */
+   ===================================== */
 .goal-message {
     background-color: #dbeafe;
     color: #1e40af;
@@ -193,9 +268,9 @@ select:focus-visible {
     font-weight: bold;
 }
 
-/* ==================================
+/* =====================================
    FOOTER
-   ================================== */
+   ===================================== */
 footer {
     background-color: #1e293b;
     color: white;
@@ -209,7 +284,6 @@ footer {
 
 footer a {
     color: #93c5fd;
-    text-decoration: underline;
     text-underline-offset: 4px;
 }
 
@@ -217,41 +291,39 @@ footer a:hover {
     color: white;
 }
 
-/* ==================================
-   POSITION PROPERTY EXAMPLE
-   ================================== */
-
-/*
-position: static;   Default position
-position: relative; Moves relative to its normal position
-position: absolute; Positioned relative to a positioned ancestor
-position: fixed;    Stays in the same place on the screen
-position: sticky;   Can stick while scrolling
-
-We will practice these properties in future updates.
-*/
-
-/* ==================================
+/* =====================================
    CSS PRIORITY / SPECIFICITY
-   ================================== */
+   ===================================== */
 
 /*
-When rules conflict, CSS generally considers:
+CSS conflict resolution generally considers:
 
 1. !important declarations
 2. Selector specificity
 3. Source order when specificity is equal
 
-For example:
-#header is more specific than .card
-.card is more specific than a plain element selector
+Example:
+#header is more specific than .card.
+.card is more specific than a plain element selector.
 
 Avoid using !important unless necessary.
 */
 
-/* ==================================
-   RESPONSIVE DESIGN: Small screens
-   ================================== */
+/* =====================================
+   POSITION PROPERTY NOTES
+   ===================================== */
+
+/*
+position: static;    Normal document flow
+position: relative;  Offset from normal position
+position: absolute;  Positioned relative to a containing block
+position: fixed;     Positioned relative to the viewport
+position: sticky;    Can stick while scrolling
+*/
+
+/* =====================================
+   RESPONSIVE DESIGN
+   ===================================== */
 @media (max-width: 600px) {
     body {
         padding: 10px;
@@ -265,6 +337,10 @@ Avoid using !important unless necessary.
         font-size: 25px;
     }
 
+    .card {
+        padding: 16px;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: stretch;
@@ -274,8 +350,7 @@ Avoid using !important unless necessary.
         text-align: center;
     }
 
-    .card {
-        padding: 16px;
+    .button {
+        text-align: center;
     }
 }
-```

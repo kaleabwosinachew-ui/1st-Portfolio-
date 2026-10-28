@@ -1,8 +1,8 @@
 /* =====================================
-   DAY 5: PORTFOLIO STYLES
+   DAY 6: PORTFOLIO STYLES
    ===================================== */
 
-/* Apply consistent sizing to all elements */
+/* Make element sizing easier to control */
 * {
     box-sizing: border-box;
 }
@@ -18,6 +18,8 @@ body {
     margin: 0;
     padding: 20px;
     line-height: 1.6;
+
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* =====================================
@@ -26,8 +28,8 @@ body {
 #header {
     background-color: #1d4ed8;
     color: white;
-
     text-align: center;
+
     padding: 25px 15px;
     margin-bottom: 20px;
 
@@ -40,7 +42,7 @@ body {
 }
 
 #header p {
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 /* =====================================
@@ -71,7 +73,7 @@ nav a {
     padding: 10px 18px;
     border-radius: 6px;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
@@ -84,7 +86,7 @@ nav a:focus-visible {
 }
 
 /* =====================================
-   MAIN CONTENT
+   MAIN CONTENT AND CARDS
    ===================================== */
 main {
     width: 100%;
@@ -92,7 +94,6 @@ main {
     margin: 0 auto;
 }
 
-/* Reusable card design */
 .card {
     background-color: white;
     padding: 22px;
@@ -113,20 +114,21 @@ main {
 }
 
 /* =====================================
-   DAILY JOURNEY
+   LEARNING JOURNEY
    ===================================== */
 .day {
+    background-color: #f8fafc;
     padding: 12px 15px;
     margin-bottom: 15px;
 
     border-left: 4px solid #2563eb;
-    background-color: #f8fafc;
+    border-radius: 4px;
 }
 
 .day h3 {
+    color: #334155;
     margin-top: 0;
     margin-bottom: 5px;
-    color: #334155;
 }
 
 .day p {
@@ -134,7 +136,24 @@ main {
 }
 
 /* =====================================
-   PROJECTS
+   PROGRESS BARS
+   ===================================== */
+progress {
+    display: block;
+    width: 100%;
+    height: 20px;
+
+    margin-bottom: 20px;
+    accent-color: #2563eb;
+}
+
+.note {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =====================================
+   PROJECT CARDS
    ===================================== */
 .project {
     padding: 15px;
@@ -143,11 +162,9 @@ main {
     border: 1px solid #dbe3ec;
     border-radius: 8px;
 
-    transition: transform 0.2s ease,
-                box-shadow 0.2s ease;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Small visual effect when hovering over a project */
 .project:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
@@ -158,7 +175,7 @@ main {
     color: #334155;
 }
 
-/* Small labels showing technologies */
+/* Technology labels */
 .tag {
     display: inline-block;
 
@@ -205,7 +222,7 @@ button {
     text-decoration: none;
     cursor: pointer;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .button:hover,
@@ -235,6 +252,7 @@ textarea {
 
     padding: 12px;
     margin-bottom: 12px;
+
     border: 1px solid #94a3b8;
     border-radius: 6px;
 
@@ -292,33 +310,72 @@ footer a:hover {
 }
 
 /* =====================================
-   CSS PRIORITY / SPECIFICITY
+   DARK MODE
+   JavaScript adds/removes this class
+   ===================================== */
+body.dark-mode {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark-mode .card {
+    background-color: #1e293b;
+    border-color: #334155;
+}
+
+.dark-mode .card h2 {
+    color: #93c5fd;
+    border-bottom-color: #334155;
+}
+
+.dark-mode .day {
+    background-color: #263449;
+    border-left-color: #60a5fa;
+}
+
+.dark-mode .day h3,
+.dark-mode .project h3 {
+    color: #e2e8f0;
+}
+
+.dark-mode .project {
+    border-color: #475569;
+}
+
+.dark-mode .tag {
+    background-color: #334155;
+    color: #bfdbfe;
+}
+
+.dark-mode .goal-message {
+    background-color: #1e3a5f;
+    color: #dbeafe;
+    border-left-color: #60a5fa;
+}
+
+.dark-mode .note {
+    color: #cbd5e1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    border-color: #64748b;
+}
+
+/* =====================================
+   CSS PRIORITY NOTES
    ===================================== */
 
 /*
-CSS conflict resolution generally considers:
-
-1. !important declarations
+CSS conflicts generally depend on:
+1. Importance and origin
 2. Selector specificity
 3. Source order when specificity is equal
 
-Example:
-#header is more specific than .card.
-.card is more specific than a plain element selector.
-
-Avoid using !important unless necessary.
-*/
-
-/* =====================================
-   POSITION PROPERTY NOTES
-   ===================================== */
-
-/*
-position: static;    Normal document flow
-position: relative;  Offset from normal position
-position: absolute;  Positioned relative to a containing block
-position: fixed;     Positioned relative to the viewport
-position: sticky;    Can stick while scrolling
+An ID selector is generally more specific than a class selector.
+Avoid !important unless it is genuinely needed.
 */
 
 /* =====================================

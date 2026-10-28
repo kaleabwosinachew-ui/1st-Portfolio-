@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Learning Portfolio</title>
-
-    <!-- Connect HTML to CSS -->
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <!-- HEADER: Introduction -->
+    <!-- HEADER -->
     <header id="header">
         <h1>My Learning Portfolio</h1>
         <p>Learning Today, Building Tomorrow 🚀</p>
+
+        <!-- Button to switch between light and dark themes -->
+        <button id="themeButton" type="button">
+            🌙 Switch to Dark Mode
+        </button>
     </header>
 
-    <!-- NAVIGATION: Links to other pages -->
+    <!-- NAVIGATION -->
     <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -27,103 +30,104 @@
         </ul>
     </nav>
 
-    <!-- MAIN: Main webpage content -->
+    <!-- MAIN CONTENT -->
     <main>
 
         <!-- INTRODUCTION -->
         <section class="card" id="about">
-            <h2>About My Journey</h2>
+            <h2>Welcome to My Portfolio 👋</h2>
 
             <p>
-                Hello! Welcome to my learning portfolio.
-                I am a beginner web developer learning how to build
-                websites using HTML and CSS.
+                I am a beginner web developer learning how to create
+                websites using HTML, CSS, and JavaScript.
             </p>
 
             <p>
-                I use AI tools as learning assistants while practicing,
-                understanding code, and solving problems.
+                I use AI tools as learning assistants to understand
+                concepts, solve problems, and improve my coding skills.
             </p>
 
-            <a class="button" href="#projects">View My Practice</a>
+            <a class="button" href="#projects">Explore My Projects</a>
         </section>
 
-        <!-- DAILY LEARNING JOURNEY -->
+        <!-- LEARNING JOURNEY -->
         <section class="card" id="journey">
             <h2>My Learning Journey 📚</h2>
 
             <article class="day">
-                <h3>Day 1: Learning HTML</h3>
-                <p>
-                    I started learning HTML and discovered how to
-                    structure a webpage with headings and paragraphs.
-                </p>
+                <h3>Day 1: HTML Basics</h3>
+                <p>I learned the basic structure of an HTML document.</p>
             </article>
 
             <article class="day">
-                <h3>Day 2: Practicing CSS</h3>
-                <p>
-                    I practiced background colors, text colors,
-                    borders, margins, and padding.
-                </p>
+                <h3>Day 2: CSS Basics</h3>
+                <p>I practiced colors, backgrounds, borders, margin, and padding.</p>
             </article>
 
             <article class="day">
                 <h3>Day 3: Semantic HTML</h3>
-                <p>
-                    I learned about header, nav, main, section,
-                    article, and footer elements.
-                </p>
+                <p>I learned to organize content using semantic elements.</p>
             </article>
 
             <article class="day">
                 <h3>Day 4: Responsive Design</h3>
-                <p>
-                    I practiced navigation menus, hover effects,
-                    Flexbox, and media queries for smaller screens.
-                </p>
+                <p>I practiced Flexbox, navigation menus, and media queries.</p>
             </article>
 
             <article class="day">
-                <h3>Day 5: Forms and Projects 💻</h3>
+                <h3>Day 5: HTML Forms</h3>
+                <p>I practiced labels, input fields, text areas, and buttons.</p>
+            </article>
+
+            <article class="day">
+                <h3>Day 6: Interactive Websites 💻</h3>
                 <p>
-                    Today, I practiced HTML forms, labels, input fields,
-                    buttons, and organizing projects into sections.
-                    I also improved my CSS layout and styling.
+                    Today, I practiced connecting JavaScript to HTML,
+                    creating a theme toggle, and displaying learning progress.
                 </p>
             </article>
         </section>
 
+        <!-- LEARNING PROGRESS -->
+        <section class="card" id="progress">
+            <h2>My Learning Progress 🎯</h2>
+
+            <p>HTML</p>
+            <progress value="70" max="100">70%</progress>
+
+            <p>CSS</p>
+            <progress value="55" max="100">55%</progress>
+
+            <p>JavaScript</p>
+            <progress value="15" max="100">15%</progress>
+
+            <p class="note">
+                These percentages are personal practice estimates,
+                not official skill measurements.
+            </p>
+        </section>
+
         <!-- PROJECTS -->
         <section class="card" id="projects">
-            <h2>My Practice Projects</h2>
+            <h2>My Practice Projects 💡</h2>
 
             <article class="project">
-                <h3>Project 1: My Portfolio</h3>
-                <p>
-                    A personal webpage where I document my web
-                    development learning journey.
-                </p>
+                <h3>Project 1: Personal Portfolio</h3>
+                <p>A website documenting my web development journey.</p>
                 <span class="tag">HTML</span>
                 <span class="tag">CSS</span>
             </article>
 
             <article class="project">
                 <h3>Project 2: Navigation Menu</h3>
-                <p>
-                    A practice project for learning links, lists,
-                    Flexbox, and hover effects.
-                </p>
+                <p>A practice project using links, lists, and Flexbox.</p>
                 <span class="tag">HTML</span>
                 <span class="tag">Flexbox</span>
             </article>
 
             <article class="project">
                 <h3>Project 3: Contact Form</h3>
-                <p>
-                    A practice form using labels, input fields,
-                    and a submit button.
-                </p>
+                <p>A practice form using labels and input fields.</p>
                 <span class="tag">HTML Forms</span>
             </article>
         </section>
@@ -133,15 +137,13 @@
             <h2>Skills I Am Practicing</h2>
 
             <ul class="skill-list">
-                <li>HTML document structure</li>
-                <li>Semantic HTML elements</li>
-                <li>Links, images, and lists</li>
-                <li>Forms and input fields</li>
-                <li>CSS colors, fonts, and borders</li>
-                <li>Margin, padding, width, and height</li>
-                <li>Flexbox and responsive design</li>
+                <li>HTML structure and semantic elements</li>
+                <li>Links, lists, images, and forms</li>
+                <li>CSS colors, fonts, borders, and spacing</li>
+                <li>Flexbox and responsive layouts</li>
                 <li>Hover effects and transitions</li>
-                <li>Git and GitHub workflow</li>
+                <li>JavaScript basics</li>
+                <li>Git and GitHub</li>
             </ul>
         </section>
 
@@ -150,13 +152,11 @@
             <h2>Contact Me 📩</h2>
 
             <p>
-                This is a practice form for learning HTML.
-                It will not send messages anywhere until a backend
-                or form service is connected.
+                This is a practice form. It will not send messages
+                until a backend or form service is connected.
             </p>
 
             <form action="#" method="post">
-
                 <label for="name">Your Name</label>
                 <input
                     type="text"
@@ -185,20 +185,19 @@
                 ></textarea>
 
                 <button type="submit">Submit Message</button>
-
             </form>
         </section>
 
-        <!-- FUTURE GOALS -->
+        <!-- GOALS -->
         <section class="card" id="goals">
-            <h2>My Future Goals 🎯</h2>
+            <h2>My Future Goals 🌟</h2>
 
             <ul class="skill-list">
-                <li>Continue practicing HTML and CSS.</li>
+                <li>Improve my HTML and CSS skills.</li>
                 <li>Learn JavaScript step by step.</li>
-                <li>Build more useful websites.</li>
-                <li>Improve my problem-solving skills.</li>
-                <li>Keep my projects updated on GitHub.</li>
+                <li>Build responsive websites.</li>
+                <li>Create more projects.</li>
+                <li>Keep my GitHub portfolio updated.</li>
             </ul>
 
             <p class="goal-message">
@@ -210,9 +209,27 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>My Learning Portfolio | Day 5</p>
+        <p>My Learning Portfolio | Day 6</p>
         <a href="#header">Back to Top ↑</a>
     </footer>
+
+    <!-- JavaScript: Make the theme button work -->
+    <script>
+        // Find the button and the webpage body
+        const themeButton = document.getElementById("themeButton");
+
+        // Run this code when the button is clicked
+        themeButton.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            // Update the button text based on the current theme
+            if (document.body.classList.contains("dark-mode")) {
+                themeButton.textContent = "☀️ Switch to Light Mode";
+            } else {
+                themeButton.textContent = "🌙 Switch to Dark Mode";
+            }
+        });
+    </script>
 
 </body>
 </html>

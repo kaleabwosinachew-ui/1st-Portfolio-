@@ -1,341 +1,223 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Learning Portfolio</title>
+    <title>My Portfolio</title>
+
+    <!-- Connect the CSS file -->
     <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
 
-    <!-- Skip link helps keyboard users reach the main content -->
-    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Navigation section -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio</h2>
 
-    <!-- HEADER -->
-    <header id="header">
-        <h1>My Learning Portfolio</h1>
-        <p>Learning Today, Building Tomorrow 🚀</p>
-
-        <button id="themeButton" type="button">
-            🌙 Switch to Dark Mode
-        </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">My Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- NAVIGATION -->
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-        </ul>
-    </nav>
+    <!-- Home section -->
+    <main>
 
-    <!-- MAIN CONTENT -->
-    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="welcome">WELCOME TO MY PORTFOLIO</p>
 
-        <!-- INTRODUCTION -->
-        <section class="card">
-            <h2>Welcome to My Portfolio 👋</h2>
+                <h1>Hello, I'm a Beginner Web Developer</h1>
 
-            <p>
-                Hello! I am a beginner web developer learning how
-                to create websites using HTML, CSS, and JavaScript.
-            </p>
-
-            <p>
-                I use AI tools as learning assistants to understand
-                code, practice new concepts, and solve problems.
-            </p>
-
-            <a class="button" href="#projects">Explore My Projects</a>
-        </section>
-
-        <!-- LEARNING JOURNEY -->
-        <section class="card" id="journey">
-            <h2>My Learning Journey 📚</h2>
-
-            <article class="day">
-                <h3>Day 1: HTML Basics</h3>
-                <p>I practiced headings, paragraphs, and HTML structure.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 2: CSS Basics</h3>
-                <p>I practiced colors, backgrounds, borders, and spacing.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 3: Semantic HTML</h3>
-                <p>I learned to organize content using semantic elements.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 4: Responsive Design</h3>
-                <p>I practiced Flexbox and layouts for smaller screens.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 5: HTML Forms</h3>
-                <p>I practiced labels, inputs, text areas, and buttons.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 6: JavaScript Basics</h3>
-                <p>I connected JavaScript to HTML to create a theme toggle.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 7: Interactive Projects</h3>
-                <p>I practiced project cards, skill filters, and JavaScript events.</p>
-            </article>
-
-            <article class="day">
-                <h3>Day 8: Accessibility and Animations 💻</h3>
                 <p>
-                    Today, I practiced FAQ sections, CSS animations,
-                    keyboard accessibility, and smooth scrolling.
+                    I'm learning how to build websites using HTML and CSS.
+                    This portfolio documents my learning journey.
                 </p>
-            </article>
+
+                <a href="#about" class="main-button">Learn More</a>
+            </div>
         </section>
 
-        <!-- SKILLS -->
-        <section class="card" id="skills">
+        <!-- About section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+
+            <p>
+                I'm currently learning web development.
+                I started with HTML and now I'm improving my CSS skills.
+                I use AI tools like ChatGPT and Claude as helpers
+                while learning and practicing.
+            </p>
+        </section>
+
+        <!-- Learning journey -->
+        <section id="journey" class="section">
+            <h2>My Learning Journey</h2>
+
+            <div class="journey-container">
+
+                <article class="journey-card">
+                    <h3>Day 1</h3>
+                    <p>Started learning the basic structure of HTML.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 2</h3>
+                    <p>Practiced headings, paragraphs and HTML elements.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 3</h3>
+                    <p>Learned about links, images and lists.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 4</h3>
+                    <p>Started working with CSS and page styling.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 5</h3>
+                    <p>Practiced colors, fonts, borders and spacing.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 6</h3>
+                    <p>Improved my portfolio layout and styling.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 7</h3>
+                    <p>Practiced project cards and responsive layouts.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 8</h3>
+                    <p>Improved accessibility and added an FAQ section.</p>
+                </article>
+
+                <article class="journey-card">
+                    <h3>Day 9</h3>
+                    <p>Learning Flexbox, Grid and responsive CSS design.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="section">
             <h2>My Skills</h2>
 
-            <div class="filter-buttons">
-                <button class="filter-button active"
-                        data-skill="all" type="button">All</button>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Learning website structure and semantic elements.</p>
+                </div>
 
-                <button class="filter-button"
-                        data-skill="html" type="button">HTML</button>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Practicing layouts, colors and responsive design.</p>
+                </div>
 
-                <button class="filter-button"
-                        data-skill="css" type="button">CSS</button>
-
-                <button class="filter-button"
-                        data-skill="javascript" type="button">JavaScript</button>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Not started yet. It's one of my future goals.</p>
+                </div>
             </div>
+        </section>
 
-            <ul class="skill-list">
-                <li data-category="html">HTML document structure</li>
-                <li data-category="html">Semantic HTML elements</li>
-                <li data-category="html">Links, lists, and forms</li>
-                <li data-category="html">Accessible HTML elements</li>
+        <!-- Projects section -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
 
-                <li data-category="css">Colors, fonts, and borders</li>
-                <li data-category="css">Flexbox and CSS Grid</li>
-                <li data-category="css">Hover effects and animations</li>
-                <li data-category="css">Responsive design</li>
+            <div class="projects-container">
 
-                <li data-category="javascript">JavaScript events</li>
-                <li data-category="javascript">DOM manipulation</li>
-                <li data-category="javascript">Filtering webpage content</li>
+                <article class="project-card">
+                    <h3>My First Website</h3>
+                    <p>
+                        My first practice website built using HTML.
+                    </p>
+                    <span>HTML</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>My Portfolio</h3>
+                    <p>
+                        A personal website documenting my web development journey.
+                    </p>
+                    <span>HTML + CSS</span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Future Project</h3>
+                    <p>
+                        More projects will be added as I continue learning.
+                    </p>
+                    <span>Coming Soon</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Goals section -->
+        <section id="goals" class="section">
+            <h2>My Goals</h2>
+
+            <ul class="goals-list">
+                <li>Improve my HTML skills.</li>
+                <li>Become better at CSS.</li>
+                <li>Learn JavaScript in the future.</li>
+                <li>Build more real-world projects.</li>
+                <li>Become a better web developer.</li>
             </ul>
         </section>
 
-        <!-- PROJECTS -->
-        <section class="card" id="projects">
-            <h2>My Project Showcase 💡</h2>
+        <!-- FAQ section -->
+        <section id="faq" class="section">
+            <h2>Frequently Asked Questions</h2>
 
-            <p>Some projects I have practiced building:</p>
-
-            <div class="project-grid">
-
-                <article class="project">
-                    <div class="project-icon">🌐</div>
-                    <h3>Personal Portfolio</h3>
-                    <p>A website documenting my learning journey.</p>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                </article>
-
-                <article class="project">
-                    <div class="project-icon">🎨</div>
-                    <h3>CSS Playground</h3>
-                    <p>A practice page for colors, spacing, and effects.</p>
-                    <span class="tag">CSS</span>
-                </article>
-
-                <article class="project">
-                    <div class="project-icon">📝</div>
-                    <h3>Contact Form</h3>
-                    <p>A practice form using labels and input fields.</p>
-                    <span class="tag">HTML Forms</span>
-                </article>
-
-                <article class="project">
-                    <div class="project-icon">📱</div>
-                    <h3>Responsive Layout</h3>
-                    <p>A layout designed for different screen sizes.</p>
-                    <span class="tag">Responsive CSS</span>
-                </article>
-
-                <article class="project">
-                    <div class="project-icon">🌙</div>
-                    <h3>Theme Switcher</h3>
-                    <p>A project for switching between light and dark themes.</p>
-                    <span class="tag">JavaScript</span>
-                </article>
-
-                <article class="project">
-                    <div class="project-icon">⚡</div>
-                    <h3>Interactive Website</h3>
-                    <p>A practice project using JavaScript events.</p>
-                    <span class="tag">JavaScript</span>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- LEARNING PROGRESS -->
-        <section class="card" id="progress">
-            <h2>My Learning Progress 🎯</h2>
-
-            <label for="htmlProgress">HTML practice</label>
-            <progress id="htmlProgress" value="70" max="100">70%</progress>
-
-            <label for="cssProgress">CSS practice</label>
-            <progress id="cssProgress" value="65" max="100">65%</progress>
-
-            <label for="jsProgress">JavaScript practice</label>
-            <progress id="jsProgress" value="25" max="100">25%</progress>
-
-            <p class="note">
-                These are personal practice estimates, not official skill scores.
-            </p>
-        </section>
-
-        <!-- FAQ SECTION -->
-        <section class="card" id="faq">
-            <h2>Frequently Asked Questions ❓</h2>
-
-            <details class="faq-item">
+            <details>
                 <summary>What am I learning?</summary>
-                <p>
-                    I am learning web development, starting with HTML,
-                    CSS, and JavaScript.
-                </p>
+                <p>I'm currently learning HTML and CSS.</p>
             </details>
 
-            <details class="faq-item">
+            <details>
+                <summary>Have I started JavaScript?</summary>
+                <p>No. JavaScript is part of my future learning plan.</p>
+            </details>
+
+            <details>
                 <summary>Why am I building this portfolio?</summary>
-                <p>
-                    I want to document my progress, practice coding,
-                    and showcase the projects I create.
-                </p>
-            </details>
-
-            <details class="faq-item">
-                <summary>What will I learn next?</summary>
-                <p>
-                    I plan to improve my CSS skills and continue
-                    learning JavaScript.
-                </p>
+                <p>To practice, document my progress and showcase my projects.</p>
             </details>
         </section>
 
-        <!-- CONTACT FORM -->
-        <section class="card" id="contact">
-            <h2>Contact Me 📩</h2>
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
 
-            <p>
-                This is a practice form. It will not send messages
-                until a backend or form service is connected.
-            </p>
+            <p>Thank you for visiting my portfolio!</p>
 
-            <form action="#" method="post">
-
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name"
-                       placeholder="Enter your name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email"
-                       placeholder="Enter your email" required>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5"
-                          placeholder="Write your message..." required></textarea>
-
-                <button type="submit">Submit Message</button>
-
-            </form>
-        </section>
-
-        <!-- GOALS -->
-        <section class="card" id="goals">
-            <h2>My Future Goals 🌟</h2>
-
-            <ul class="skill-list">
-                <li>Improve my HTML and CSS skills.</li>
-                <li>Learn JavaScript step by step.</li>
-                <li>Build responsive websites.</li>
-                <li>Improve my problem-solving skills.</li>
-                <li>Keep my GitHub projects updated.</li>
-            </ul>
-
-            <p class="goal-message">
-                Every expert was once a beginner. Keep learning!
-            </p>
+            <a href="mailto:example@email.com" class="main-button">
+                Send Me an Email
+            </a>
         </section>
 
     </main>
 
-    <!-- BACK TO TOP -->
-    <a href="#header" class="back-to-top">↑ Back to Top</a>
-
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-        <p>My Learning Portfolio | Day 8</p>
-        <p>Keep learning. Keep building. Keep improving.</p>
+        <p>© 2026 My Portfolio | Day 9 of My Learning Journey</p>
+        <a href="#home">Back to Top ↑</a>
     </footer>
 
-    <!-- JAVASCRIPT -->
-    <script>
-
-        // 1. DARK MODE
-        const themeButton = document.getElementById("themeButton");
-
-        themeButton.addEventListener("click", function () {
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-                themeButton.textContent = "☀️ Switch to Light Mode";
-            } else {
-                themeButton.textContent = "🌙 Switch to Dark Mode";
-            }
-        });
-
-        // 2. FILTER SKILLS
-        const filterButtons = document.querySelectorAll(".filter-button");
-        const skillItems = document.querySelectorAll(".skill-list li[data-category]");
-
-        filterButtons.forEach(function (button) {
-            button.addEventListener("click", function () {
-                const selectedSkill = button.dataset.skill;
-
-                filterButtons.forEach(function (item) {
-                    item.classList.remove("active");
-                });
-
-                button.classList.add("active");
-
-                skillItems.forEach(function (skill) {
-                    if (
-                        selectedSkill === "all" ||
-                        skill.dataset.category === selectedSkill
-                    ) {
-                        skill.hidden = false;
-                    } else {
-                        skill.hidden = true;
-                    }
-                });
-            });
-        });
-
-    </script>
-
 </body>
-            </html>
+</html>

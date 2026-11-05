@@ -384,3 +384,70 @@ a:focus-visible {
     }
 }
 
+/* =================================
+   DAY 11 - CSS POSITIONING
+================================= */
+
+/* 1. Positioning lesson section */
+
+.position-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+/* 2. Position cards using CSS Grid */
+
+.position-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* 3. Common card styling */
+
+.position-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.position-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* 4. Hover effect */
+
+.position-card:hover {
+    transform: translateY(-5px);
+}
+
+/* 5. Relative positioning example */
+
+.relative-card {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 2px solid #38bdf8;
+}
+
+/* 6. Responsive layout */
+
+@media (max-width: 900px) {
+    .position-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .position-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+

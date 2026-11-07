@@ -450,4 +450,94 @@ a:focus-visible {
     }
 }
 
+/* =================================
+   DAY 12 - CSS Z-INDEX
+================================= */
+
+/* Description */
+.z-description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+/* Parent container */
+.z-demo {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 280px;
+    margin: 30px auto;
+    background-color: #e2e8f0;
+    border: 2px dashed #94a3b8;
+    border-radius: 12px;
+}
+
+/* Common box styling */
+.z-box {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* First box */
+.box-one {
+    background-color: #2563eb;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+/* Second box */
+.box-two {
+    background-color: #16a34a;
+    top: 70px;
+    left: 120px;
+    z-index: 2;
+}
+
+/* Third box */
+.box-three {
+    background-color: #dc2626;
+    top: 110px;
+    left: 200px;
+    z-index: 3;
+}
+
+/* Explanation */
+.z-note {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #475569;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .z-demo {
+        height: 240px;
+    }
+
+    .z-box {
+        width: 120px;
+        height: 100px;
+    }
+
+    .box-one {
+        left: 10px;
+    }
+
+    .box-two {
+        left: 75px;
+    }
+
+    .box-three {
+        left: 140px;
+    }
+}
+
 

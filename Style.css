@@ -540,4 +540,121 @@ a:focus-visible {
     }
 }
 
+/* =================================
+   DAY 13 - OVERFLOW, OPACITY
+   AND VISIBILITY
+================================= */
+
+/* Common lesson cards */
+
+.effect-card {
+    background-color: white;
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.effect-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* 1. OVERFLOW */
+
+.overflow-demo {
+    width: 100%;
+    height: 120px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 8px;
+
+    /* Adds a scrollbar when needed */
+    overflow: auto;
+}
+
+/* Other overflow values:
+
+   overflow: visible;
+   overflow: hidden;
+   overflow: scroll;
+   overflow: auto;
+
+*/
+
+/* 2. OPACITY */
+
+.opacity-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.opacity-box {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 130px;
+}
+
+.opacity-full {
+    opacity: 1;
+}
+
+.opacity-half {
+    opacity: 0.5;
+}
+
+.opacity-low {
+    opacity: 0.2;
+}
+
+/* 3. VISIBILITY */
+
+.visibility-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.visibility-box {
+    background-color: #16a34a;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Hides the element but keeps its space */
+
+.hidden-box {
+    visibility: hidden;
+}
+
+.visibility-note {
+    margin-top: 15px;
+    color: #475569;
+    font-size: 14px;
+}
+
+/* 4. Responsive design */
+
+@media (max-width: 600px) {
+    .effect-card {
+        padding: 18px;
+    }
+
+    .opacity-box {
+        min-width: 100%;
+    }
+}
+
 

@@ -657,4 +657,125 @@ a:focus-visible {
     }
 }
 
+/* =================================
+   DAY 14 - TRANSITIONS,
+   TRANSFORMS AND ANIMATIONS
+================================= */
+
+/* Common lesson cards */
+
+.animation-card {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.animation-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+/* 1. CSS TRANSITION */
+
+.transition-box {
+    width: 180px;
+    padding: 20px;
+    margin: 25px auto;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+
+    /* Makes the color change smooth */
+    transition: background-color 0.5s ease;
+}
+
+.transition-box:hover {
+    background-color: #16a34a;
+}
+
+/* 2. CSS TRANSFORM */
+
+.transform-box {
+    width: 180px;
+    padding: 20px;
+    margin: 25px auto;
+    background-color: #7c3aed;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+
+    transition: transform 0.4s ease;
+}
+
+.transform-box:hover {
+    transform: translateY(-10px) scale(1.1);
+}
+
+/* 3. CSS ANIMATION */
+
+.animation-area {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+.animated-box {
+    width: 110px;
+    padding: 20px 10px;
+    background-color: #dc2626;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+
+    /* Runs the animation repeatedly */
+    animation: moveBox 2s ease-in-out infinite alternate;
+}
+
+/* Animation steps */
+
+@keyframes moveBox {
+    from {
+        transform: translateX(-60px);
+    }
+
+    to {
+        transform: translateX(60px);
+    }
+}
+
+/* 4. Responsive design */
+
+@media (max-width: 600px) {
+    .animation-card {
+        padding: 18px;
+    }
+
+    .transition-box,
+    .transform-box {
+        max-width: 100%;
+    }
+}
+
+/* 5. Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-box {
+        animation: none;
+    }
+
+    .transition-box,
+    .transform-box {
+        transition: none;
+    }
+}
+
 

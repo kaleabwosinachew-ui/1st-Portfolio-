@@ -779,3 +779,109 @@ a:focus-visible {
 }
 
 
+/* =================================
+   DAY 15 - CSS FLEXBOX
+================================= */
+
+/* Common lesson cards */
+
+.flex-lesson-card {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.flex-lesson-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Common Flexbox container */
+
+.flex-demo {
+    display: flex;
+    min-height: 120px;
+    padding: 15px;
+    margin-top: 20px;
+    gap: 10px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+/* Common items */
+
+.flex-item {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 1. FLEX DIRECTION */
+
+.direction-demo {
+    flex-direction: row;
+}
+
+/* 2. JUSTIFY CONTENT */
+
+.justify-demo {
+    justify-content: space-between;
+}
+
+/* 3. ALIGN ITEMS */
+
+.align-demo {
+    align-items: center;
+}
+
+.tall-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* 4. FLEX WRAP */
+
+.wrap-demo {
+    flex-wrap: wrap;
+}
+
+/* 5. FLEX GROW */
+
+.grow-demo {
+    align-items: center;
+}
+
+.grow-item {
+    flex-grow: 1;
+    background-color: #16a34a;
+}
+
+/* Hover effect */
+
+.flex-item:hover {
+    background-color: #7c3aed;
+    transition: background-color 0.3s;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+    .flex-lesson-card {
+        padding: 18px;
+    }
+
+    .flex-demo {
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        padding: 12px;
+    }
+}
+

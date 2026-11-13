@@ -885,3 +885,104 @@ a:focus-visible {
     }
 }
 
+/* =================================
+   DAY 16 - CSS GRID
+================================= */
+
+/* Common lesson cards */
+
+.grid-lesson-card {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+}
+
+.grid-lesson-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+/* Common Grid container */
+
+.grid-demo {
+    display: grid;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+/* Common Grid items */
+
+.grid-item {
+    background-color: #2563eb;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 1. GRID COLUMNS */
+
+.columns-demo {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* 2. GRID ROWS */
+
+.rows-demo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 80px;
+    gap: 10px;
+}
+
+/* 3. FRACTION UNIT */
+
+.fraction-demo {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+/* 4. REPEAT FUNCTION */
+
+.repeat-demo {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* 5. GRID GAP */
+
+.gap-demo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Hover effect */
+
+.grid-item:hover {
+    background-color: #7c3aed;
+    transition: background-color 0.3s;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+    .grid-lesson-card {
+        padding: 18px;
+    }
+
+    .repeat-demo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        padding: 15px 8px;
+    }
+}
+
+

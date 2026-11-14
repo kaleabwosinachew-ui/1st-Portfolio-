@@ -984,5 +984,50 @@ a:focus-visible {
         padding: 15px 8px;
     }
 }
+/* Day 17: Advanced CSS Grid */
 
+/* Grid example */
+.advanced-grid {
+    display: grid;
+
+    /* Create 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Style each grid item */
+.grid-box {
+    background-color: #dceeff;
+    color: #222;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888;
+    border-radius: 8px;
+}
+
+/* Make this item take 2 columns */
+.wide-box {
+    grid-column: span 2;
+}
+
+/* Make this item take 2 rows */
+.tall-box {
+    grid-row: span 2;
+}
+
+/* Responsive grid using minmax() and auto-fit */
+.responsive-grid {
+    display: grid;
+
+    /* Columns are at least 150px and can grow */
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+
+    gap: 15px;
+    margin: 20px 0;
+}
 

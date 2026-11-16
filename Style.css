@@ -1030,4 +1030,42 @@ a:focus-visible {
     gap: 15px;
     margin: 20px 0;
 }
+/* Day 18: Responsive Design */
 
+/* Flexible demo layout */
+.responsive-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.demo-box {
+    background-color: #dceeff;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #888;
+    border-radius: 8px;
+}
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    .responsive-demo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .responsive-demo {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

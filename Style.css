@@ -1069,3 +1069,35 @@ a:focus-visible {
         font-size: 25px;
     }
 }
+/* Day 19: CSS Variables */
+
+/* Define reusable values */
+:root {
+    --main-color: #2563eb;
+    --secondary-color: #16a34a;
+    --text-color: #333333;
+    --background-color: #f0f4f8;
+    --box-padding: 20px;
+    --box-radius: 10px;
+}
+
+/* Use the variables */
+.variable-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.variable-box {
+    background-color: var(--main-color);
+    color: white;
+    padding: var(--box-padding);
+    border-radius: var(--box-radius);
+    text-align: center;
+}
+
+/* Use another variable */
+.secondary-box {
+    background-color: var(--secondary-color);
+}

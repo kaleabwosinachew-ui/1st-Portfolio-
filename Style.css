@@ -1101,3 +1101,30 @@ a:focus-visible {
 .secondary-box {
     background-color: var(--secondary-color);
 }
+/* Certificate Section */
+
+.certificate-section {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.certificate-card {
+    max-width: 750px;
+    margin: 25px auto;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.certificate-card h3 {
+    margin-top: 15px;
+    color: #2563eb;
+}

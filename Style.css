@@ -1128,3 +1128,40 @@ a:focus-visible {
     margin-top: 15px;
     color: #2563eb;
 }
+/* Day 20: CSS Pseudo-elements */
+
+/* Add a star before the heading */
+.before-example::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* Add an arrow after the heading */
+.after-example::after {
+    content: " →";
+    color: blue;
+}
+
+/* Add a line below the title */
+.pseudo-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: orange;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Highlight text using pseudo-elements */
+.highlight-text::before {
+    content: "“";
+    color: blue;
+    font-size: 25px;
+}
+
+.highlight-text::after {
+    content: "”";
+    color: blue;
+    font-size: 25px;
+}

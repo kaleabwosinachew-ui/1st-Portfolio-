@@ -1165,3 +1165,80 @@ a:focus-visible {
     color: blue;
     font-size: 25px;
 }
+/* Certificate and Achievements Section */
+
+.certificate-section,
+.goals-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.certificate-card {
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.certificate-info {
+    padding: 15px;
+    color: #333;
+}
+
+.achievement-label {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 7px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Developer Goals Section */
+
+.goal-card {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.goal-card li {
+    margin: 12px 0;
+}
+
+.goal-message {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+    .certificate-card {
+        padding: 10px;
+    }
+
+    .certificate-info {
+        padding: 10px;
+    }
+
+    .certificate-section,
+    .goals-section {
+        padding: 25px 10px;
+    }
+}
